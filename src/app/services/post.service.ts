@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PostService {
   private url = 'http://localhost:5000/api/tipologiche/getCuisinesList';
-  private urlRestaurants = 'http://localhost:5000/api/restaurant/getRestaurants/1/10'
+  private urlRestaurants = 'http://localhost:5000/api/restaurant/getRestaurants/1/20'
   
    
   constructor(private httpClient: HttpClient) { }

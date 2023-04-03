@@ -11,6 +11,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { HeroSectionComponent } from './hero-section/hero-section.component'
+import {MatDatepickerModule} from '@angular/material/datepicker'
+import {MatFormFieldModule} from '@angular/material/form-field'
 
 
 @NgModule({
@@ -18,6 +22,7 @@ import {MatButtonModule} from '@angular/material/button'
     AppComponent,
     CardComponent,
     NavBarComponent,
+    HeroSectionComponent,
     
   ],
   imports: [
@@ -29,6 +34,9 @@ import {MatButtonModule} from '@angular/material/button'
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatPaginatorModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

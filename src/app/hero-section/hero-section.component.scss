@@ -1,0 +1,14 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 100px 100px 15px;
+    background-color: red;;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleHero {
+    font-size: 46px;
+    font-weight: 800;
+    color: white;
+}
