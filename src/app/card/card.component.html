@@ -1,0 +1,27 @@
+ <mat-card class="example-card">
+    <mat-card-header>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <mat-card-title>(titolo)</mat-card-title>
+        <div class="recensioniCard">
+            <div class="stelleCard">
+
+            </div>
+            <div class="numRecensioniCard">
+                <h4> (num) recensioni</h4>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="buttonCards">
+      <button mat-button>(orario)</button>
+      <button mat-button>(orario)</button>
+    </mat-card-actions>
+  </mat-card> 
+
+  
+
+  <li *ngFor="let ristorante of dati">
+    {{ristorante}} 
+    </li>
+  
