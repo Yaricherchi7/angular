@@ -1,27 +1,26 @@
- <mat-card class="example-card">
+ <div class="card">
+ <mat-card class="example-card" *ngFor="let rist of item">
     <mat-card-header>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <img mat-card-image src="assets/opentable.png" alt="Photo of a Shiba Inu">
     <mat-card-content>
-        <mat-card-title>(titolo)</mat-card-title>
+        <mat-card-title><h2>{{rist.restaurantName}}</h2> </mat-card-title>
         <div class="recensioniCard">
             <div class="stelleCard">
-
             </div>
             <div class="numRecensioniCard">
-                <h4> (num) recensioni</h4>
+                <h4> <strong>Prezzo:</strong>  {{rist.priceRange}}</h4>
+                <p><strong>Adress:</strong>> {{rist.geolocation.address}}</p>
+                <p><strong>Tell:</strong> {{rist.phone}}</p>
             </div>
         </div>
     </mat-card-content>
     <mat-card-actions class="buttonCards">
-      <button mat-button>(orario)</button>
-      <button mat-button>(orario)</button>
+      <button mat-button>Orario: {{rist.open.workHours}}</button>
+      <button mat-flat-button color="primary">Prenota</button>
     </mat-card-actions>
   </mat-card> 
+</div>
 
-  
-
-  <li *ngFor="let ristorante of dati">
-    {{ristorante}} 
-    </li>
+ 
   

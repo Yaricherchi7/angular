@@ -9,13 +9,16 @@ import { CardComponent } from './card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { NavBarComponent } from './nav-bar/nav-bar.component'
 import {MatToolbarModule} from '@angular/material/toolbar'
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    NavBarComponent
+    NavBarComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import {MatIconModule} from '@angular/material/icon'
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

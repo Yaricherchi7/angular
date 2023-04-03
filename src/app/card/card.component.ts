@@ -7,9 +7,11 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class CardComponent {
   
+  @Input() item : any = "";
+  
+
   ngOnInit(): void {
     
   }
   
-  @Input() dati="restaurants"
 }

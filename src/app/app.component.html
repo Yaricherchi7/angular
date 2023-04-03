@@ -1,3 +1,12 @@
-
 <app-nav-bar></app-nav-bar>
-<app-card [dati]="restaurants"></app-card>
+<div class="container">
+  <li *ngFor="let ristoranti of posts">
+    <button class="buttonRestaurant" mat-raised-button>{{ ristoranti }}</button>
+  </li>
+</div>
+<app-card [item]="restaurants"></app-card>
+
+<!-- *ngFor="let rist of restaurants"> {{rist.companyName}} -->
+
+
+
